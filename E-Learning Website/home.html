@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+    <div class="container">
+        <div class="left-side">
+            <div class="logo-container">
+                <img src="logo.png" alt="Logo" class="logo-img">
+                <h1 class="logo">
+                    <a href="home.html">MyE-Learn</a>
+                </h1>
+            </div>
+            <nav>
+    		<ul class="nav-links">
+        	    <li class="dropdown">
+                    <a href="#">Learn</a>
+            		<ul class="dropdown-content">
+                	    <li><a href="ai.html">Artificial Intelligence</a></li>
+                	    <li><a href="da.html">Data Analytics</a></li>
+                	    <li><a href="das.html">Data Science</a></li>
+                	    <li><a href="gdesign.html">Graphic Design</a></li>
+                	    <li><a href="web.html">Web Development</a></li>
+            		</ul>
+        	    </li>
+    		</ul>
+	    </nav>
+            <div class="search-box">
+                <input type="text" placeholder="Search for courses...">
+                <span class="search-icon">&#128269;</span>
+            </div>
+        </div>
+        <div class="auth-buttons">
+             <button class="sign-in" onclick="showLoginForm()">Sign In</button>
+             <button class="sign-up" onclick="showSignUpForm()">Sign Up</button>
+        </div>
+
+        <!-- Login Form (Modal) -->
+    	<div class="login-modal" id="loginModal">
+            <div class="login-form-container">
+                <h2>Log in to continue your learning journey</h2>
+                <input type="email" placeholder="Email" required>
+                <button>Log in</button>
+                <div class="sign-up-message">
+                    Don't have an account? <a onclick="showSignUpForm()">Sign up</a>
+                </div>
+            </div>
+        </div>
+	<!-- Sign Up Form (Modal) -->
+        <div class="sign-up-modal" id="signUpModal">
+            <div class="login-form-container">
+                <h2>Sign up and start learning</h2>
+                <input type="text" placeholder="Full name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button>Sign up</button>
+                <div class="sign-up-message">
+                    Already have an account? <a onclick="showLoginForm()">Log in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <!-- Hero Section with Video Background -->
+    <section class="hero">
+    <div class="hero-content">
+        <h1>Learn to Code, Build Your Future</h1>
+        <p>Explore a wide range of programming languages with hands-on projects.</p>
+        <div class="cta-buttons">
+            <button class="start-learning" onclick="showSignUpForm()">Start Learning</button>
+        </div>
+    </div>
+</section>
+
+    <!-- Featured Courses Section -->
+    <section class="featured-courses" id="courses">
+        <div class="container">
+            <h2>Most Popular Certificates</h2>
+            <div class="course-grid">
+                <div class="course-card">
+                    <img src="h2.png" alt="Course 1">
+                    <div class="course-info">
+                        <h3>Python for Beginners</h3>
+                        <p>Learn the basics of programming with Python.</p>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="h3.png" alt="Course 2">
+                    <div class="course-info">
+                        <h3>Web Development</h3>
+                        <p>Master web development with HTML, CSS, and JavaScript.</p>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="h4.png" alt="Course 3">
+                    <div class="course-info">
+                        <h3>Data Science Fundamentals</h3>
+                        <p>Get started with data science using R and Python.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Students Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <img src="h5.png" alt="Student 1">
+                    <blockquote>"This platform helped me land my first coding job!"</blockquote>
+                    <p>- Student 1</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="h5.png" alt="Student 2">
+                    <blockquote>"The hands-on projects are exactly what I needed."</blockquote>
+                    <p>- Student 2</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="h5.png" alt="Student 3">
+                    <blockquote>"I love the community and support here."</blockquote>
+                    <p>- Student 3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-links">
+            <a href="#privacy" class="footer-link">Privacy Policy</a>
+            <a href="#terms" class="footer-link">Terms of Service</a>
+        </div>
+        <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="footer-copy">&copy; 2024 MyE-Learn. All rights reserved.</p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

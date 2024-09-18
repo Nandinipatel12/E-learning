@@ -1,0 +1,74 @@
+1. Home Page
+Header:
+Logo
+Navigation Menu (Home, Courses, Blog, About Us, Contact)
+Sign In/Sign Up buttons
+Hero Section:
+A catchy headline like "Learn to Code, Build Your Future"
+Subheadline: "Explore a wide range of programming languages with hands-on projects."
+Call to Action (CTA) buttons: "Start Learning" and "Browse Courses"
+Featured Courses:
+A grid of popular courses with images, course titles, and a brief description.
+Button to view all courses.
+Testimonials:
+Section for student testimonials with images and quotes.
+Footer:
+Links to privacy policy, terms of service, social media icons, and contact information.
+2. Courses Page
+Filter and Search:
+Search bar to find specific courses.
+Filters for difficulty level (Beginner, Intermediate, Advanced), programming languages (Python, JavaScript, etc.), and course type (Full Course, Short Tutorial, etc.).
+Course Listings:
+Cards displaying course image, title, instructor, rating, and a brief description.
+Enroll button on each course card.
+3. Course Detail Page
+Course Overview:
+Course title, image, instructor details, and rating.
+Detailed course description, including syllabus, learning objectives, and prerequisites.
+Enroll button and price (if applicable).
+Course Content:
+A list of modules/lessons with titles and durations.
+Progress bar indicating how much of the course has been completed.
+Student Reviews:
+Section for student reviews and ratings.
+Related Courses:
+Recommendations for other courses learners might be interested in.
+4. Learning Dashboard
+Sidebar:
+Links to all enrolled courses, progress, and settings.
+Main Content:
+Current course in progress with a video player, lesson content, and navigation buttons (Next Lesson, Previous Lesson).
+Resources section for downloadable materials like code snippets and project files.
+Progress Tracker:
+Visual representation of learning progress across all courses.
+Discussion Forum:
+Section for students to ask questions, participate in discussions, and interact with instructors.
+5. Sign In/Sign Up Page
+Sign In Form:
+Fields for email/username and password, with a “Forgot Password?” link.
+Sign Up Form:
+Fields for name, email, password, and confirmation.
+Option to sign up with Google/GitHub.
+Social Proof:
+Show logos of companies where students have gotten jobs or projects after learning from the site.
+6. Profile Page
+User Information:
+Display profile picture, name, and bio.
+Enrolled Courses:
+List of all the courses the user is enrolled in with progress bars.
+Achievements:
+Badges or certificates earned for course completions.
+Settings:
+Options to change password, manage notifications, and link social accounts.
+7. Blog/Resource Page
+Latest Articles:
+List of blog posts with categories like tutorials, coding challenges, industry news, etc.
+Resource Library:
+Links to coding tools, cheat sheets, and external resources.
+8. Contact Page
+Contact Form:
+Fields for name, email, subject, and message.
+Contact Information:
+Email, phone number, and physical address.
+Map:
+Embedded Google Map for physical location.

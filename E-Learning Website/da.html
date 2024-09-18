@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analytics | MyE-Learn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="left-side">
+            <div class="logo-container">
+                <img src="logo.png" alt="Logo" class="logo-img">
+                <h1 class="logo">
+                    <a href="home.html">MyE-Learn</a>
+                </h1>
+            </div>
+            <nav>
+    		<ul class="nav-links">
+        	    <li class="dropdown">
+                    <a href="#">Learn</a>
+            		<ul class="dropdown-content">
+                	    <li><a href="ai.html">Artificial Intelligence</a></li>
+                	    <li><a href="da.html">Data Analytics</a></li>
+                	    <li><a href="das.html">Data Science</a></li>
+                	    <li><a href="gdesign.html">Graphic Design</a></li>
+                	    <li><a href="web.html">Web Development</a></li>
+            		</ul>
+        	    </li>
+    		</ul>
+	    </nav>
+            <div class="search-box">
+                <input type="text" placeholder="Search for courses...">
+                <span class="search-icon">&#128269;</span>
+            </div>
+        </div>
+        <div class="auth-buttons">
+             <button class="sign-in" onclick="showLoginForm()">Sign In</button>
+             <button class="sign-up" onclick="showSignUpForm()">Sign Up</button>
+        </div>
+
+        <!-- Login Form (Modal) -->
+    	<div class="login-modal" id="loginModal">
+            <div class="login-form-container">
+                <h2>Log in to continue your learning journey</h2>
+                <input type="email" placeholder="Email" required>
+                <button>Log in</button>
+                <div class="sign-up-message">
+                    Don't have an account? <a onclick="showSignUpForm()">Sign up</a>
+                </div>
+            </div>
+        </div>
+	<!-- Sign Up Form (Modal) -->
+        <div class="sign-up-modal" id="signUpModal">
+            <div class="login-form-container">
+                <h2>Sign up and start learning</h2>
+                <input type="text" placeholder="Full name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button>Sign up</button>
+                <div class="sign-up-message">
+                    Already have an account? <a onclick="showLoginForm()">Log in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Course Hero Section -->
+<section class="course-hero">
+    <div class="container">
+        <!-- Content section -->
+        <div class="hero-content-wrapper">
+            <!-- Hero content: Title, Description, and Details -->
+            <div class="hero-content">
+                <h1 class="course-title">IBM: Data Analytics Basics for Everyone</h1>
+                <p class="course-description">Learn the fundamentals of Data Analytics and gain an understanding of the data ecosystem, the process and lifecycle of data analytics, career opportunities, and the different learning paths you can take to be a Data Analyst.</p>
+                
+                <!-- Course Details Box -->
+                <div class="course-details-box">
+                    <div class="detail">
+                        <div class="icon"><i class="fas fa-clock"></i></div>
+                        <div class="detail-text">
+                            <span class="main-text">5 weeks</span><br>
+                            <span class="sub-text">2-3 hours per week</span>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="icon"><i class="fas fa-user-clock"></i></div>
+                        <div class="detail-text">
+                            <span class="main-text">Self-paced</span><br>
+                            <span class="sub-text">Progress at your own speed</span>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="icon"><i class="fas fa-dollar-sign"></i></div>
+                        <div class="detail-text">
+                            <span class="main-text">Free</span><br>
+                            <span class="sub-text">Optional upgrade available</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image section -->
+        <div class="hero-image">
+            <img src="da1.png" alt="CS50AI Image">
+        </div>
+    </div>
+</section>
+
+    <!-- Course Content Section -->
+<section class="course-content">
+    <div class="container">
+        <!-- About the Course -->
+        <div class="about-course">
+            <h2>About the Course</h2>
+            <p>This course, Data Analytics, is designed to provide a deep dive into the techniques and tools used to analyze large datasets and extract meaningful insights. The course starts with foundational topics, including data cleaning, preparation, and visualization, and progresses to more advanced concepts such as statistical analysis and machine learning.</p> &nbsp
+            <p>By the end of the course, you'll gain proficiency in data wrangling, exploratory data analysis, using libraries such as Pandas, NumPy, and Matplotlib, and developing predictive models with machine learning algorithms. Whether you're new to data analytics or looking to upgrade your skills, this course equips you with the knowledge and expertise to succeed in the growing field of data science and analytics.</p>
+        </div>
+
+        <!-- What You'll Learn -->
+        <div class="course-learn">
+            <h2>What You'll Learn</h2>
+            <ul>
+        	<li>Fundamentals of Data Analytics and its importance in decision-making</li>
+        	<li>Exploration of data collection, cleaning, and preprocessing techniques</li>
+        	<li>Hands-on experience with data visualization tools and techniques</li>
+        	<li>Introduction to statistical analysis and predictive modeling</li>
+        	<li>Working on real-world projects using industry-standard tools like Python, R, and SQL</li>
+        	<li>Final project focusing on end-to-end data analysis workflow</li>
+          </ul>
+        </div>
+
+        <!-- Enrollment Call-to-Action -->
+        <div class="course-enroll">
+            <h2>Are You Interested in This Course?</h2>
+            <p>If you're ready to take the next step in mastering Data Analytics, explore the available sessions below and enroll now. Don't miss this opportunity to enhance your skills and accelerate your career!</p>
+            <div class="session-details">
+                <h3>Available Sessions</h3>
+                <p><strong>Next session:</strong> [Start Date]</p>
+                <p><strong>Duration:</strong> 5 weeks</p>
+                <p><strong>Format:</strong> Self-paced, online</p>
+            </div>
+            <div class="enroll-button">
+                <a href="#" class="btn-enroll">Enroll Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-links">
+            <a href="#privacy" class="footer-link">Privacy Policy</a>
+            <a href="#terms" class="footer-link">Terms of Service</a>
+        </div>
+        <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="footer-copy">&copy; 2024 MyE-Learn. All rights reserved.</p>
+    </div>
+</footer>
+    <script src="script.js"></script>
+
+</body>
+</html>

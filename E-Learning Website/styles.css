@@ -1,0 +1,580 @@
+/* Reset */
+body, h1, h2, p, ul, li, a, button, video {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #eaeff2;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #2d3a4a;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Logo Text */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    color: #00a896;
+}
+
+/* Navigation */
+nav {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links .dropdown {
+    position: relative;
+}
+
+.nav-links .dropdown a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links .dropdown a:hover {
+    background-color: #3a4f63;
+}
+
+/* Dropdown Container */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4f6367; /* Dropdown background color */
+    min-width: 200px;
+    padding: 10px 0;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+/* Dropdown Items */
+.dropdown-content li {
+    list-style: none;
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+/* Links within the Dropdown */
+.dropdown-content li a {
+    color: #f9a826; /* Link text color */
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+/* Hover effect for Links */
+.dropdown-content li a:hover {
+    background-color: #66717e; /* Slightly darker background on hover */
+}
+
+/* Show Dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.left-side {
+    display: flex;
+    align-items: center;
+}
+
+.left-side nav {
+    margin: 0 20px;
+}
+
+.search-box {
+    margin-left: 20px;
+    position: relative;
+    width: 300px;
+    margin-right: 600px;
+}
+
+.search-box input {
+    padding: 10px 15px 10px 40px; /* Adjusted padding to make space for the icon */
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    outline: none;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px; /* Added space between the icon and the left edge */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #333;
+    pointer-events: none;
+}
+
+/* Auth Buttons */
+.auth-buttons button {
+    background-color: #00a896;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-buttons button:hover {
+    background-color: #028090;
+}
+
+/* Login and Sign Up Modal Styling */
+.login-modal, .sign-up-modal {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.login-form-container {
+    background: white;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-form-container h2{
+    color:#333;
+    font-size:16px;
+}
+
+.login-form-container input {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form-container button {
+    padding: 10px;
+    width: 100%;
+    background-color: #a65cff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sign-up-message {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.sign-up-message a {
+    color: #a65cff;
+    text-decoration: none;
+}
+
+.sign-up-message a:hover {
+    text-decoration: underline;
+}
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background-image: url('m1.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-buttons button {
+    background-color: #028090;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-buttons button:hover {
+    background-color: #05668d;
+}
+
+/* Featured Courses */
+.featured-courses {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.featured-courses h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.course-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.course-card {
+    background-color: #e6f2ff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+}
+
+.course-card img {
+    width: 99.9%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.course-info {
+    padding: 20px;
+}
+
+.course-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #05668d;
+}
+
+.course-info p {
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 60px 20px;
+    background-color: #eaeff2;
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.testimonial-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+blockquote {
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+.testimonial-card p {
+    font-size: 14px;
+    color: #05668d;
+}
+
+/* Footer */
+footer {
+    background-color: #2d3a4a;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-links {
+    margin-bottom: 15px;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+}
+
+.social-icon {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #a65cff; /* Change to your preferred color */
+}
+
+/* Font Awesome icons (include this in your HTML head or add the link to your CSS) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+.footer-copy {
+    font-size: 12px;
+    color: #fff;
+}
+
+
+/* Course Hero Section Styles */
+.course-hero {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    position: relative; /* Ensure the background image container is positioned correctly */
+    background-color: #aec6cf; /* Optional background color */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensures wrapping on small screens */
+}
+
+/* Content Wrapper */
+.hero-content-wrapper {
+    flex: 1;
+    max-width: 80%; /* Adjusts how much space the content takes */
+    padding-right: 20px; /* Space between content and image */
+}
+
+.hero-content {
+    margin-bottom: 30px;
+}
+
+.course-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #002d42;
+    margin-bottom: 10px;
+}
+
+.course-description {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Course Details Box */
+.course-details-box {
+    width:780px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 10px;
+    font-size: 50px;
+    color: #00796b;
+}
+
+.detail-text .main-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #002d42;
+}
+
+.detail-text .sub-text {
+    font-size: 14px;
+    color: #777;
+}
+
+.hero-image {
+    flex: 1; /* Takes up the remaining space */
+    background-position: center right; /* Position the image to the right */
+    background-repeat: no-repeat;
+    height: 100%; /* Adjust height as needed */
+}
+
+/* Course Content Section */
+.course-content {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.about-course, .course-learn, .course-enroll {
+    margin-bottom: 40px;
+}
+
+.course-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.course-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.course-learn ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.course-learn li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.session-details h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.session-details p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.enroll-button {
+    margin-top: 20px;
+}
+
+.enroll-button .btn-enroll {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.enroll-button .btn-enroll:hover {
+    background-color: #004999;
+}
